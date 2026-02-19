@@ -9,7 +9,11 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "test:run": "node tests/index.test.js",
-    "lint": "echo 'linting skipped'"
+    "lint": "echo 'linting skipped'",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "audit": "npm audit"
   },
   "keywords": [
     "markdown",
