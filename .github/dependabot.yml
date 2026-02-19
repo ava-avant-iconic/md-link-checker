@@ -1,0 +1,18 @@
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '06:00'
+    open-pull-requests-limit: 5
+    labels:
+      - 'security'
+      - 'dependencies'
+    commit-message:
+      prefix: 'security'
+      prefix-development: 'chore'
+      include: 'scope'
+
