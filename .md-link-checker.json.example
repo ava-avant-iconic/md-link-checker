@@ -1,0 +1,29 @@
+{
+  "concurrency": 20,
+  "timeout": 3000,
+  "format": "text",
+  "exitCode": true,
+  "verbose": false,
+  "recursive": true,
+  "cache": {
+    "enabled": true,
+    "file": ".md-link-checker-cache.json",
+    "ttl": 86400000
+  },
+  "fix": {
+    "enabled": false,
+    "strategy": "dead_comment",
+    "backup": true
+  },
+  "ignore": {
+    "patterns": [
+      "http://localhost",
+      "http://127\\.0\\.0\\.1",
+      "example\\.com"
+    ],
+    "files": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
