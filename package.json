@@ -1,0 +1,31 @@
+{
+  "name": "md-link-checker",
+  "version": "1.0.0",
+  "description": "CLI tool to check for broken links in Markdown files",
+  "main": "cli.js",
+  "bin": {
+    "md-link-checker": "./cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "markdown",
+    "links",
+    "checker",
+    "cli",
+    "documentation",
+    "broken-links",
+    "dead-links",
+    "md"
+  ],
+  "author": "OpenClaw",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
